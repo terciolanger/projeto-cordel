@@ -1,34 +1,122 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'xilosa';
+    src: url('../fonts/xilosa_.ttf')format('opentype'),url('../fonts/xilosa_.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cordel';
+    src: url('../fonts/Cordel Encarnado II.otf')format('opentype'),url('../fonts/Cordel Encarnado II.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Passion One', cursive;
-    --fonte3: 'Sriracha', cursive;
+    --fonte2: 'xilosa', cursive;
+    --fonte3: 'cordel', cursive;
 }
 
-body {
-    min-height: 97vh;
-    background-color: darkgray;
-    font-family: var(--fonte1);
+* {
     margin: 0px;
     padding: 0px;
     font-size: 1em;
 }
 
-header {
-    background-color: black;
-    color: white;
-    text-align: center;      
+body {
+    min-height: 97vh;
+    background-color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;    
 }
+
+header {
+    background-color: white;
+    background-image: url('../imagens/Cacto.jpg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 25% 110%;
+    position: relative;    
+    color: black;
+    text-align: center;        
+}
+
 header > h1 {
     padding-top: 50px;    
-    font-family: var(--fonte2);
-    font-variant: small-caps;
-    font-size: 10vw;
-    margin: 0px;    
+    font-family: var(--fonte3);    
+    font-size: 8vw;         
 }
 
 header > p {
     padding-bottom: 50px;  
+    font-family: var(--fonte3);
+    font-size: 2em;
 }
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 4vw;
+    font: bolder;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
+    background-size: cover;
+    background-attachment: fixed;
+} 
+
+.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+#img01 {
+    background-image: url('../imagens/joaninha-girassol.jpg');
+    background-position: right center;
+}
+
+#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
+footer > p {
+    background-color: black;      
+    color: white;
+    font-size: 1.3em;
+    text-align: center;     
+    padding: 10px;    
+}
+        
+footer a {
+    color: var(--cor7);
+    text-decoration: none; 
+    font-style: italic;        
+}
+
+footer a:hover{
+    text-decoration: underline;
+
+}
+
