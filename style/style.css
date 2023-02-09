@@ -81,9 +81,11 @@ section > p {
 .imagem{
     background-color: rgb(51, 51, 51);
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
-    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%); 
+    /*background-size: cover;*/
+    background-size: 48%;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 } 
 
 .imagem > p {
@@ -95,13 +97,13 @@ section > p {
 }
 
 #img01 {
-    background-image: url('../imagens/joaninha-girassol.jpg');
+    background-image: url('../imagens/Sertãobrasileiro2.jpg');
     background-position: right center;
 }
 
 #img02{
-    background-image: url('../imagens/background002.jpg');
-    background-position: right center;
+    background-image: url('../imagens/Mandacaruano.jpg');
+    background-position: center right;
 }
 
 footer > p {
