@@ -99,8 +99,10 @@ section > p {
     background-color: var(--cor3);
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
+    background-size: cover;    
+    background-repeat: no-repeat;        
+    background-position: center center;
     background-attachment: fixed;
-    background-repeat: no-repeat;    
 } 
 
 .imagem > p {
@@ -112,16 +114,11 @@ section > p {
 }
 
 #img01 {
-    background-image: url('../imagens/backgroud-image1.jpg');    
-    background-size: cover;
-    background-position: center center;
+    background-image: url('../imagens/backgroud-image1.jpg');      
 }
 
 #img02{
-    background-image: url('../imagens/backgroud-image2.jpg');
-    background-size: cover;
-    background-position: center center;
-    
+    background-image: url('../imagens/backgroud-image2.jpg');      
 }
 
 footer > p {
