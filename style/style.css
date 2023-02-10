@@ -9,14 +9,18 @@
 
 @font-face {
     font-family: 'cordel';
-    src: url('../fonts/Cordel Encarnado II.otf')format('opentype'),url('../fonts/Cordel Encarnado II.otf') format('truetype');
+    src: url('../fonts/cordel_encarnadoII.otf')format('opentype'),url('../fonts/cordel_encarnadoII.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-
-
 :root {
+    --cor0: #f84664; /*cor link cabeçalho*/    
+    --cor1: #fca6b4; /*cor link cabeçalho hover*/
+    --cor2: #eaf0dd; /*cor.normal*/
+    --cor3: #333333; /*cor .imagem*/  
+    --cor4: #0000004d; /*cor .imagem p*/  
+
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'xilosa', cursive;
     --fonte3: 'cordel', cursive;
@@ -30,30 +34,45 @@
 
 body {
     min-height: 97vh;    
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: var(--fonte1);    
 }
 
-header {    
-    background-color: white;    
-    background-image: url('../imagens/Cacto8.jpg');
+header {              
+    background-image: url('../imagens/backgroud-image_cab.jpg');
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center right;       
-    color: black;
+    background-position: center right;             
     text-align: center;   
-    padding-bottom: 35px;        
+    color: black; 
+    padding-bottom: 35px;  
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 52%);            
 }
 
 header > h1 {
     padding-top: 50px;    
     font-family: var(--fonte3);    
-    font-size: 8vw;         
+    font-size: 8vw;                
 }
 
 header > p {
     padding-top: 40px;
     padding-bottom: 50px;  
     font-family: var(--fonte3);
-    font-size: 1.3em;    
+    font-size: 1.3em;      
+}
+        
+header a {
+    text-decoration: none; 
+    font-style: italic;  
+}
+
+header a:visited {
+    color: var(--cor0); 
+}
+
+header a:hover{
+    text-decoration: none;
+    color:var(--cor1);
 }
 
 section {      
@@ -63,8 +82,7 @@ section {
     padding-left: 30px;
     font-family: var(--fonte2);
     font-size: 4vw;
-    font: bolder;   
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 42%);             
+    font: bolder;                
 }
 
 section > p {        
@@ -72,56 +90,57 @@ section > p {
 }
 
 .normal {
-    background-color: #eaf0dd;
+    background-color: var(--cor2);
     color: black;    
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 42%); 
-    border-radius: 20px 20px 0px 0px;  
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 42%);       
 }
 
 .imagem{
-    background-color: rgb(51, 51, 51);
+    background-color: var(--cor3);
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%); 
-    /*background-size: cover;*/
-    background-size: 48%;
+    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
 } 
 
 .imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.075);
+    background-color: var(--cor4);
     text-shadow: 1px 1px 0px black;
     border-radius: 20px;
 }
 
 #img01 {
-    background-image: url('../imagens/Sertãobrasileiro2.jpg');
-    background-position: right center;
+    background-image: url('../imagens/backgroud-image1.jpg');    
+    background-size: cover;
+    background-position: center center;
 }
 
 #img02{
-    background-image: url('../imagens/Mandacaruano.jpg');
-    background-position: center right;
+    background-image: url('../imagens/backgroud-image2.jpg');
+    background-size: cover;
+    background-position: center center;
+    
 }
 
 footer > p {
     background-color: black;      
     color: white;
-    font-size: 1.3em;
+    font-size: 0.9em;
     text-align: center;     
     padding: 10px;    
 }
         
 footer a {
-    color: var(--cor7);
+    color: white;
     text-decoration: none; 
-    font-style: italic;        
+    font-style: italic; 
+    text-decoration: underline;       
 }
 
 footer a:hover{
-    text-decoration: underline;
-
+    text-decoration: none;  
 }
+
 
