@@ -51,7 +51,7 @@ header {
 header > h1 {
     padding-top: 50px;    
     font-family: var(--fonte3);    
-    font-size: 8vw;  
+    font-size: 8vw;  /*8vw Significa 8% da largura da tela */
     /*text-transform: uppercase; Transformar em caixa alta*/  
     /*font-variant: small-caps; deixa em caixa alta e as primeiras letras maiores*/         
 }
